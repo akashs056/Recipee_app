@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        //Test
         Handler(Looper.getMainLooper()).postDelayed(
             {
                 startActivity(Intent(this,HomeActivity::class.java))
