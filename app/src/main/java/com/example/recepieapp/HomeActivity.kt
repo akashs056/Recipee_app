@@ -22,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        //More OnClickListener
         binding.more.setOnClickListener {
             val bottomSheetDialog = BottomSheetDialog(this)
             bottomSheetDialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
