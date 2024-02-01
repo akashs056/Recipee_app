@@ -14,7 +14,8 @@ class SearchAdapter(var datalist:ArrayList<Recipe>, var context: Context):
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder
+    {
         var view =SearchRvBinding.inflate(LayoutInflater.from(context),parent,false)
         return ViewHolder(view)
     }
@@ -22,7 +23,8 @@ class SearchAdapter(var datalist:ArrayList<Recipe>, var context: Context):
     override fun getItemCount(): Int {
         return datalist.size
     }
-    fun filterList(filterList:ArrayList<Recipe>){
+    fun filterList(filterList:ArrayList<Recipe>)
+    {
         datalist=filterList
         notifyDataSetChanged()
 
